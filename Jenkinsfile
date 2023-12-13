@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('Deploy to Server'){
             steps{
-                bat 'scp ${WORKSPACE}/* zeenux@zeenux.online:/home/zeenux/public_html/'
+                bat 'scp -r ${WORKSPACE}/* zeenux@zeenux.online:/home/zeenux/public_html/'
             }
         }
     }
