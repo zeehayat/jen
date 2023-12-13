@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment{
-        staging_server=zeenux.online
+        staging_server='zeenux.online'
     }
     stages{
         stage('Deploy to Server'){
